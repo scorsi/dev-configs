@@ -8,6 +8,7 @@ opt.smartindent = true
 
 opt.number = true
 opt.relativenumber = true
+opt.cursorline = true
 
 opt.splitright = true
 opt.splitbelow = true
