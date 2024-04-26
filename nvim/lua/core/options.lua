@@ -36,3 +36,7 @@ opt.updatetime = 50
 
 -- vim.opt.colorcolumn = "80"
 
+vim.g.loaded_python3_provider = false
+vim.g.loaded_ruby_provider = false
+vim.g.loaded_node_provider = false
+vim.g.loaded_perl_provider = false
