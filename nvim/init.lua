@@ -1,4 +1,6 @@
+require("core.options")
+require("core.keymaps")
+
 require("lazy-init")
-require("vim-options")
 
 require("lazy").setup("plugins")
