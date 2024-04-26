@@ -23,8 +23,8 @@ opt.backspace = "indent,eol,start"
 opt.swapfile = true
 opt.backup = false
 opt.undofile = true
-opt.directory = os.getenv("HOME") .. "/.vim/swap"
-opt.undodir = os.getenv("HOME") .. "/.vom/undo"
+opt.directory = os.getenv("HOME") .. "/.local/share/nvim/swap"
+opt.undodir = os.getenv("HOME") .. "/.local/share/nvim/undo"
 
 opt.termguicolors = true
 
