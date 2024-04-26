@@ -6,34 +6,38 @@ I use Manjaro, based on Arch, there's a WSL2 version available : https://github.
 
 ## Shell
 
-Using zsh + oh-my-zsh + starship
+Using fish + starship
 
 ```sh 
-sudo pamac install zsh starship
+sudo pamac install fish starship
 ```
 
-When prompt choose to add oh-my-zsh.
-
-After zsh installed and ran once:
+You can also add the ls/cd variants I use:
 ```sh
-git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
-git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+sudo pamac install eza zoxide ripgrep fd
+```
+
+Install the languages needed in the current configuration:
+```sh
+sudo pamac install nodejs npm pnpm dotnet-sdk rust python
 ```
 
 ## Editor
 
 I use nvim
 ```sh
-sudo pamac install nvim unzip tree-sitter tree-sitter-cli nodejs pnpm ripgrep fd
+sudo pamac install nvim unzip tree-sitter tree-sitter-cli
 ```
-
-When asked choose to not install npm, we use pnpm instead.
 
 ## Term
 
 Default basic Windows Terminal with color scheme : https://github.com/catppuccin/windows-terminal
+
+I also use tmux to enhance my term experience:
+```sh
+sudo pamac install tmux
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+```
 
 
 ## Font
