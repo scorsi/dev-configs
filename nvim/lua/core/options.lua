@@ -12,6 +12,11 @@ opt.relativenumber = true
 opt.splitright = true
 opt.splitbelow = true
 
+opt.ignorecase = true
+opt.smartcase = true
+opt.hlsearch = false
+opt.incsearch = true
+
 opt.backspace = "indent,eol,start"
 
 opt.swapfile = true
