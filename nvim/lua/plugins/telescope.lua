@@ -29,11 +29,18 @@ return {
                     ["ui-select"] = {
                         require("telescope.themes").get_dropdown({}),
                     },
+
+                    aerial = {
+                        show_nesting = {
+                            ["_"] = true,
+                        },
+                    },
                 },
             })
 
             telescope.load_extension("ui-select")
             telescope.load_extension("fzf")
+            telescope.load_extension("aerial")
 
             local keymap = vim.keymap
             keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
@@ -47,6 +54,7 @@ return {
                 { desc = "Find string under cursor in cwd" }
             )
             keymap.set("n", "<leader>ft", "<cmd>TodoTelescope theme=ivy<cr>", { desc = "Find todos" })
+            keymap.set("n", "<leader>fa", "<cmd>Telescope aerial theme=ivy<cr>", { desc = "Find symbols" })
         end,
     },
 }
