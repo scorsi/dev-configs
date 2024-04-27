@@ -10,3 +10,7 @@ functions/fzf_*.fish
 conf.d/autopair.fish
 functions/_autopair_*.fish
 
+# sponge plugin
+conf.d/sponge.fish
+functions/_sponge_*.fish
+functions/sponge_*.fish
