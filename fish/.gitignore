@@ -1,1 +1,12 @@
 fish_variables
+
+# fzf plugin
+completions/fzf_*.fish
+conf.d/fzf.fish
+functions/_fzf_*.fish
+functions/fzf_*.fish
+
+# autopair plugin
+conf.d/autopair.fish
+functions/_autopair_*.fish
+
