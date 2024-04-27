@@ -7,5 +7,5 @@ alias cat "bat"
 alias zz "z -"
 
 alias vim "nvim"
-alias vi "vim"
+alias vi "nvim"
 
