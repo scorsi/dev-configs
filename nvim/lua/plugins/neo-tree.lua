@@ -29,7 +29,7 @@ return {
             vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
         end
 
-        vim.keymap.set("n", "<leader>ee", ":Neotree filesystem reveal left toggle<CR>", {})
+        vim.keymap.set("n", "<leader>ep", ":Neotree filesystem reveal left toggle<CR>", {})
         vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
 
         require("neo-tree").setup({})
