@@ -2,12 +2,21 @@ return {
     "stevearc/conform.nvim",
     event = { "BufReadPre", "BufNewFile" },
     config = function()
+        local path = require("mason-core.path")
         local conform = require("conform")
 
         conform.setup({
             formatters_by_ft = {
                 lua = { "stylua" },
                 python = { "isort", "black" },
+                yaml = { "yamlfmt" },
+                hcl = { "hclfmt" },
+                terraform = { "hclfmt" },
+            },
+            formatters = {
+                hclfmt = {
+                    command = path.concat({ vim.fn.stdpath("data"), "mason", "bin", "hclfmt" }),
+                },
             },
             format_on_save = {
                 lsp_fallback = true,

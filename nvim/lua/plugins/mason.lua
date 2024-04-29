@@ -21,6 +21,8 @@ return {
                 "lua_ls",
                 "rust_analyzer",
                 "pyright",
+                "terraformls",
+                "yamlls",
             },
         })
 
@@ -30,6 +32,10 @@ return {
                 "isort",
                 "black",
                 "pylint",
+                "hclfmt",
+                "tflint",
+                "yamlfmt",
+                "yamllint",
             },
         })
     end,

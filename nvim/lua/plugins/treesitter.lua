@@ -10,6 +10,9 @@ return {
                     "lua",
                     "rust",
                     "python",
+                    "hcl",
+                    "terraform",
+                    "yaml",
                 },
                 highlight = {
                     enable = true,
