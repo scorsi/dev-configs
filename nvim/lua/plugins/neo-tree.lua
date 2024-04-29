@@ -32,7 +32,24 @@ return {
         vim.keymap.set("n", "<leader>ep", ":Neotree filesystem reveal left toggle<CR>", {})
         vim.keymap.set("n", "<leader>bf", ":Neotree buffers reveal float<CR>", {})
 
-        require("neo-tree").setup({})
+        require("neo-tree").setup({
+            filesystem = {
+                filtered_items = {
+                    visible = true,
+                    hide_dotfiles = false,
+                    hide_by_name = {
+                        ".git",
+                        ".venv",
+                    },
+                    hide_by_pattern = {
+                        "*.lock",
+                    },
+                },
+                follow_current_file = {
+                    enable = true,
+                },
+            },
+        })
 
         vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
     end,
