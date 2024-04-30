@@ -23,6 +23,7 @@ return {
                 "pyright",
                 "terraformls",
                 "yamlls",
+                "taplo",
             },
         })
 
