@@ -42,6 +42,13 @@ return {
                     normal = { c = { fg = colors.fg, bg = colors.bg } },
                     inactive = { c = { fg = colors.fg, bg = colors.bg } },
                 },
+                disabled_filetypes = {
+                    "alpha",
+                    "neo-tree",
+                    "TelescopePrompt",
+                    "lazygit",
+                },
+                globalstatus = true,
             },
             sections = {
                 lualine_a = {},
