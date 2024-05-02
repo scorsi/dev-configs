@@ -12,15 +12,26 @@ return {
         config = function()
             local telescope = require("telescope")
 
+            local additional_rg_args = { "--hidden", "--glob", "!**/.git/*", "--glob", "!**/node_modules/*" }
+
             telescope.setup({
                 defaults = {
                     theme = "ivy",
                 },
 
                 pickers = {
-                    find_files = { theme = "ivy" },
-                    live_grep = { theme = "ivy" },
-                    grep_string = { theme = "ivy" },
+                    find_files = {
+                        theme = "ivy",
+                        find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
+                    },
+                    live_grep = {
+                        theme = "ivy",
+                        additional_args = additional_rg_args,
+                    },
+                    grep_string = {
+                        theme = "ivy",
+                        additional_args = additional_rg_args,
+                    },
                     oldfiles = { theme = "ivy" },
                     buffers = { theme = "ivy" },
                 },
