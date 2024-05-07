@@ -66,6 +66,7 @@ return {
             )
             keymap.set("n", "<leader>ft", "<cmd>TodoTelescope theme=ivy<cr>", { desc = "Find todos" })
             keymap.set("n", "<leader>fa", "<cmd>Telescope aerial theme=ivy<cr>", { desc = "Find symbols" })
+            keymap.set("n", "<leader>fv", "<cmd>VenvSelect theme=ivy<cr>", { desc = "Find python virtualenv" })
         end,
     },
 }

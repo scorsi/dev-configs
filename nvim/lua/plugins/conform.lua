@@ -17,6 +17,25 @@ return {
                 hclfmt = {
                     command = path.concat({ vim.fn.stdpath("data"), "mason", "bin", "hclfmt" }),
                 },
+                -- INFO: black and isort are loaded from venv thanks to venv-selector,
+                -- normally no need to extra stuff but here's a draft on how to load from venv in case of issue
+                --
+                -- isort = function(_)
+                --     local venv_selector = require("venv-selector")
+                --     local venv = venv_selector.get_active_venv()
+                --     if venv ~= "" then
+                --         local command = vim.fn.findfile("isort", venv .. ";")
+                --         if command ~= "" then
+                --             return {
+                --                 command = command,
+                --             }
+                --         end
+                --     end
+                --
+                --     return {
+                --         command = "isort",
+                --     }
+                -- end,
             },
             format_on_save = {
                 lsp_fallback = true,
