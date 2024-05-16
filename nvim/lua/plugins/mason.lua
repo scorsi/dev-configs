@@ -24,6 +24,8 @@ return {
                 "terraformls",
                 "yamlls",
                 "taplo",
+                "dockerls",
+                "docker_compose_language_service",
             },
         })
 
