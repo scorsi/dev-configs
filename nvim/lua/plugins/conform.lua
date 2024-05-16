@@ -12,6 +12,7 @@ return {
                 yaml = { "yamlfmt" },
                 hcl = { "hclfmt" },
                 terraform = { "hclfmt" },
+                bash = { "shfmt" },
             },
             formatters = {
                 hclfmt = {

@@ -26,6 +26,7 @@ return {
                 "taplo",
                 "dockerls",
                 "docker_compose_language_service",
+                "bashls",
             },
         })
 
@@ -39,6 +40,7 @@ return {
                 "tflint",
                 "yamlfmt",
                 "yamllint",
+                "shfmt",
             },
         })
     end,
