@@ -13,6 +13,7 @@ return {
                 hcl = { "hclfmt" },
                 terraform = { "hclfmt" },
                 bash = { "shfmt" },
+                json = { "prettier" },
             },
             formatters = {
                 hclfmt = {
